@@ -1,30 +1,20 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React from 'react';
+import FormIn from './components/formIn'
+import FormOut from './components/formOut'
+import './style/style.css'
 
 function App() {
   return (
-    <div className="back_phone">
-      <div className="column">
-        <a><h3>У меня есть</h3></a>
-        <div className="column_button">
-          <button value="RUB">RUB</button>
-          <button value="RUB">USD</button>
-          <button value="RUB">EUR</button>
-          <button value="RUB">GBP</button>
-        </div>
-        <div className="box"></div>
+    <div>
+      <div className="row">
+        <h4>Обмен валюты</h4>
+        <h4>Курсы</h4>
       </div>
-      <div className="column">
-        <h3>Хочу приобрести</h3>
-        <div className="column_button">
-          <button value="RUB">RUB</button>
-          <button value="RUB">USD</button>
-          <button value="RUB">EUR</button>
-          <button value="RUB">GBP</button>
-        </div>
-        <div className="box">
-          <textarea></textarea>
-        </div>
+      <div className="change">
+        <React.Fragment>
+          <FormIn/>
+          <FormOut/>
+        </React.Fragment>
       </div>
     </div>
   );
